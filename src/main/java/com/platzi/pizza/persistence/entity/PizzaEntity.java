@@ -37,13 +37,13 @@ public class PizzaEntity extends AuditableEntity implements Serializable {
     @Column(nullable = false, columnDefinition = "Decimal(5,2)")
     private Double price;
 
-    @Column(columnDefinition = "TINYINT")
+    @Column(columnDefinition = "Boolean")
     private Boolean vegetarian;
 
-    @Column(columnDefinition = "TINYINT")
+    @Column(columnDefinition = "Boolean")
     private Boolean vegan;
 
-    @Column(columnDefinition = "TINYINT", nullable = false)
+    @Column(columnDefinition = "Boolean ", nullable = false)
     private Boolean available;
 
     @Override

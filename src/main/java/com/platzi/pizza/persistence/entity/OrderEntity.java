@@ -33,7 +33,7 @@ public class OrderEntity {
     @Column(name = "id_customer", nullable = false, length = 15)
     private String idCustomer;
 
-    @Column(nullable = false, columnDefinition = "DATETIME")
+    @Column(nullable = false, columnDefinition = "TIMESTAMP")
     private LocalDateTime date;
 
     @Column(nullable = false, columnDefinition = "DECIMAL(6,2)")
